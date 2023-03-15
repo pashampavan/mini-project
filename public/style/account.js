@@ -82,6 +82,7 @@ function transfer2()
     btn6.style.display="block";
 
 }
+// .hbjuhbjubjhbjhbuhbijn
 function transfer3()
 {
     const btn7=document.getElementById("btn7");
