@@ -1,0 +1,31 @@
+
+.signupcontainer  form .msg{
+    display: "none";
+}
+.f1
+{
+    position: absolute;
+    content: "";
+    background-color: #353e56;
+    top: 0px;
+    height: 750px;
+    width: 100%;
+    opacity: .9;
+    display: none;
+    /* margin-top: 400px; */
+}
+.f1 .f2
+{
+    position: absolute;
+    content: "";
+    background-color: white;
+    top:200px;
+    left: 350px;
+    height: 350px;
+    width: 800px;
+    border-radius: 20px;
+    opacity: 2;
+}
+.f1 .signupcontainer {
+    margin: auto;
+}
