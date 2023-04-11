@@ -1,0 +1,345 @@
+.account{
+    /* border: 2px white solid ; */
+    border-radius: 10px;
+    margin: 50px 50px ;
+    padding: 5px 5px;
+    width: 40%;
+    height: 57vh;
+    color:black;
+}
+
+.account  h1{
+
+    
+    color: rgb(110, 218, 243);
+}
+.account .details
+{
+    color:aqua;
+
+}
+.account::before
+{
+    content: "";
+    background-image: url('https://img.freepik.com/premium-vector/financial-banking-technology-concept_387612-31.jpg?w=1060');
+    min-width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    position:absolute;
+    background-position: center;
+    z-index: -2;
+
+}
+
+.account h1{
+text-align: center;
+font-size: 30px;
+}
+.account .details h4{
+      margin: 5px 0px 0px 10px;
+      padding: 2px 2px;
+      font-size: 24px;
+}
+.service, #services
+{
+    display:"none";
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: 0px 1px;
+}
+.service .i{
+    display:flex;
+    flex-direction: row;
+}
+.service h1{
+    text-align: center;
+    font-size: 30px;
+}
+.service .box{
+    border: 2px black solid;
+    padding: 2px 2px;
+    margin: 2px 35px;
+    width: 286px;
+    height: 222px;
+    /* background-color: #9672b7; */
+    border-radius: 20px;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+}
+.service form button:hover{
+    
+    color: aliceblue;
+    /* border-radius: 8px; */
+}
+.service form{
+    display: inline-block;
+
+}
+.service form button{
+        text-decoration: none;
+        border: 2px black solid;
+        background-color:rgb(2, 88, 94);
+        padding: 6px 10px;
+        width: 114px;
+        margin: 2px auto;
+        color: aqua;
+}
+.account .details  a{
+    
+    text-decoration: none;
+    color: rgb(17, 18, 19);
+    color: aqua;
+}
+.account .details  a:hover{
+    
+    color: rgb(226, 228, 230);
+}
+.account .details a{
+    border: 2px black solid;
+    border-radius: 8px;
+    background-color:rgb(2, 88, 94);
+    font-size: 20px;
+    color: aqua;
+    padding: 6px 15px;
+    margin: 7px 495px 8px 11px;
+}
+.account .details .a2{
+
+    margin: 7px 384px 8px 11px;
+}
+.account .details a:hover{
+    background-color:rgb(1, 66, 71);
+    color:rgb(107, 227, 236)
+}
+.history{
+    border: 2px black solid;
+    border-radius: 10px;
+    display:none; 
+}
+.history .box{
+    border: 2px white solid;
+    /* border-radius: 10px; */
+    /* background-color:black; */
+    color: black;
+    height: 39px;
+    padding: 0px 0px 2px 10px;
+    margin: 0px;
+    /* display: inline-block; */
+}
+.history .box h4{
+    margin: 3px 196px 6px 62px;
+    display: inline-block;
+    width: 113px;
+}
+.history .box h3{
+    margin: 3px 196px 6px 62px;
+    display: inline-block;
+    width: 113px;
+    color: rgb(25, 137, 25);
+}
+.btn2
+{
+    display: block;
+    border: 2px black solid;
+    margin: 3px 0px 0px 12px;
+    padding: 5px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.btn2:hover
+{
+    border: 2px white solid;
+    background-color: black;
+    color: white;
+}
+.history .type h3
+{
+    display: inline-block;
+    margin: 3px 256px 3px 30px;
+    color: white;
+}
+.history .type
+{
+    background-color: rgb(213, 21, 21);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+body{
+    background-color: #131720;;
+}
+.serve
+{
+    margin-top: 20px;
+    display: flex;
+    height: 100vh;
+}
+.serve .card1:hover
+{
+    box-shadow: 0 0 11px 0px rgb(226, 220, 128);
+}
+.serve .card2:hover
+{
+    box-shadow: 0 0 11px 0px rgb(96, 100, 234);
+}
+.serve .card3:hover
+{
+    box-shadow: 0 0 11px 0px rgb(58, 175, 83);
+}
+.serve .card img
+{
+    width: 100%;
+    height: 250px;
+}
+.serve .card h2
+{
+    text-align: left;
+    padding-left: 15px;
+    margin:10px 2px 0px 2px;
+    
+}
+.serve .card3 h2
+{
+   color: rgb(61, 188, 101);
+    
+}
+.serve .card2 h2
+{
+    text-align: left;
+    padding-left: 15px;
+    margin:10px 2px 0px 2px;
+    color: rgb(83, 48, 210);
+    
+}
+.serve .card p
+{
+    padding-left: 15px;
+
+}
+.serve .card1 p
+{
+    color: rgb(228, 224, 191);
+
+}
+.serve .card2 p
+{
+    color: rgb(130, 98, 243);
+
+}
+.serve .card button
+{
+    background-color: rgb(136, 128, 53);
+    color: rgb(208, 205, 165);
+    padding: 4px 14px;
+    border:rgb(208, 205, 165) ;
+    margin: 1px 15px;
+    cursor: pointer;
+}
+.serve .card1 button
+{
+    background-color: rgb(136, 128, 53);
+    color: rgb(208, 205, 165);
+    border:rgb(208, 205, 165) ;
+}
+.serve .card2 button
+{
+    background-color: rgb(28, 9, 96);;
+    color: rgb(105, 105, 221);
+    border:rgb(105, 105, 221) ;
+}
+.serve .card3 button
+{
+    background-color: rgb(2, 89, 26);;
+    color: rgb(93, 188, 106);
+    border:rgb(105, 221, 115) ;
+}
+.serve .card
+{
+    background-color: rgb(37, 34, 0);
+    border: 2px solid rgb(226, 220, 128);
+    color: rgb(226, 220, 128);
+    height: 410px;
+    width: 550px;
+    margin: 28px 19px;
+    display: inline-block;
+}
+.serve .card2
+{
+    background-color: rgb(9, 0, 42);
+    border: 2px solid rgb(104, 72, 220);
+    color: rgb(130, 98, 243);
+}
+.serve .card3
+{
+    background-color: rgb(1, 37, 12);
+    border: 2px solid rgb(18, 226, 49);
+    color: rgb(112, 197, 108);
+}
+.arrow i
+{
+    margin-top: 0px;
+    animation-name:margin;
+    font-size: 36px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.arrow
+{
+    text-align: center;
+    height: 35px;
+}
+@keyframes margin {
+    0%
+    {
+        margin-top: 0px;
+        font-size: 36px;
+        color: rgb(13, 205, 205);
+    }
+    25%
+    {
+        margin-top:10px;
+        font-size: 46px;
+        color: rgb(12, 232, 232);
+    }
+    50%
+    {
+        margin-top: 0px;
+        font-size: 36px;
+        color: rgb(12, 232, 232);
+    }
+    75%
+    {
+        margin-top: 10px;
+        font-size: 46px;
+        color: rgb(12, 232, 232);
+    }
+    100%
+    {
+        margin-top: 0px;
+        font-size: 36px;
+        color: rgb(12, 232, 232);
+    }
+}
+.btn2
+{
+    background-color:rgb(2, 88, 94);
+}
+.otp input
+{
+    border: 1px solid aqua;
+}
+.otp
+{
+    border: 2px solid rgb(83, 214, 223);
+    padding: 15px 20px;
+    color: aqua;
+    display: none;
+}
+.signupcontainer .otp input:focus
+{
+
+    border: 1px solid rgb(14, 244, 244);
+}
