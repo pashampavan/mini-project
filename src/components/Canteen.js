@@ -15,6 +15,14 @@ export default function Canteen() {
             setLogin(true);
         }
     },[])
+    const ca=()=>{
+        if(user.name==='canteen' || user.name==='stationary' || user.name==='juicePoint')
+        {
+            return true;
+        }
+        return false;
+    }
+    var canteen=ca();
     const Accept=async (type,id)=>{
 
         console.log("Accepted."+id);
@@ -40,13 +48,31 @@ export default function Canteen() {
     }
     // /delete?name=canteen&rollNo=${rollNo}&password=${password}
   return (
-    <div className="orders">
+    <>
+    {(canteen)?<div className='orders'><div className="order">
+            <div className="type" >
+                <h3 style={{margin:" 3px 171px 3px 51px"}}>Item</h3>
+                <h3 style={{margin:" 3px 171px 3px 51px"}}>Price</h3>
+                <h3 style={{margin:" 3px 171px 3px 51px"}}>order</h3>
+                <h3 style={{margin:" 3px 171px 3px 51px"}}>name</h3>
+                <h3 style={{margin:" 3px 171px 3px 51px"}}>rollNo</h3>
+            </div>
+            {user.order.map((el)=>{
+                return <div className="box">
+                    <h4  style={{width:"130px"}}>{el.item}</h4>
+                    <h4  style={{width:"130px"}} id="h4">{el.price}/-</h4>
+                    <h4  style={{width:"130px"}}>{el.id}</h4>
+                    <h4  style={{width:"130px"}}>{el.name}</h4>
+                    <h4  style={{width:"130px"}}>{el.rollNo}</h4>
+                    </div>
+             })}
+        </div></div>:<div className="orders">
         <h2>cafetaria</h2>
         <div className="order">
             <div className="type">
                 <h3>Item</h3>
                 <h3>Price</h3>
-                <h3>order</h3>
+                <h3>order id</h3>
                 <h3>name</h3>
                 <h3>rollNo</h3>
                 <h3>Redeem</h3>
@@ -72,7 +98,7 @@ export default function Canteen() {
             <div className="type">
                 <h3>Item</h3>
                 <h3>Price</h3>
-                <h3>order</h3>
+                <h3>order id</h3>
                 <h3>name</h3>
                 <h3>rollNo</h3>
                 <h3>Redeem</h3>
@@ -97,7 +123,7 @@ export default function Canteen() {
             <div className="type">
                 <h3>Item</h3>
                 <h3>Price</h3>
-                <h3>order</h3>
+                <h3>order id</h3>
                 <h3>name</h3>
                 <h3>rollNo</h3>
                 <h3>Redeem</h3>
@@ -117,7 +143,9 @@ export default function Canteen() {
                     </div>
              })}
         </div>
-    </div>
+    </div>}
+    
+    </>
    
     
   )

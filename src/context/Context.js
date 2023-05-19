@@ -8,6 +8,7 @@ const Context = (props) => {
     },[])
         const [login, setLogin] = useState(false);
         const [alert, setAlert] = useState(null);
+        const [H,setH]=useState(false);
         const [song,setSong]=useState(false);
         const [savings, setSavings] = useState(0);
         const changeSavings = (s1, s2) => {
@@ -186,7 +187,7 @@ const Context = (props) => {
                 }
         }
         return (
-                <context.Provider value={{getOtp,song,setSong, buy,transfer, transfer2, transfer3, transfer4, user, setUser, savings, setSavings, login, setLogin, getUser, alert, showAlert }}>
+                <context.Provider value={{getOtp,H,setH,song,setSong, buy,transfer, transfer2, transfer3, transfer4, user, setUser, savings, setSavings, login, setLogin, getUser, alert, showAlert }}>
                         {props.children}
                 </context.Provider>
         )

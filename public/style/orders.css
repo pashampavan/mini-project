@@ -15,9 +15,9 @@
 }
 .orders .order .box h4{
     display: inline-block;
-    margin: 0px 132px 0px 17px;
+    margin: 0px 102px 0px 17px;
     color: black;
-    width: 94px;
+    width: 115px;
 }
 
 .orders .order .box .h4
@@ -71,7 +71,7 @@
 .order .type h3{
     
     display: inline-block;
-    margin: 3px 152px 3px 51px;
+    margin: 3px 138px 3px 51px;
     color: white;
 }
 .order .type form{

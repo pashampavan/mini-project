@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Signup from './components/Signup'
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route
 } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
     <Context>
-    <Router>
+    <BrowserRouter basename='/mini-project'>
     <Navbar/>
     <Switch>
           <Route exact path="/">
@@ -46,7 +46,7 @@ function App() {
           <JuicePoint/>
           </Route>
         </Switch>
-    </Router>
+    </BrowserRouter>
 
     </Context>
     </>

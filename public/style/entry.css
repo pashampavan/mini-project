@@ -10,6 +10,7 @@
     margin-top: 50px;
     background-color: rgb(0, 49, 50);
     font-family: 'Baloo Bhai 2', cursive;
+    display: none;
 }
 h1 ,h2{
     font-family: 'Baloo Bhai 2', cursive;
@@ -58,7 +59,7 @@ body
     color:white;
     /* border: 2px solid white; */
     font-size: 25px;
-    border-radius: 30px;
+    border-radius: 0px;
     padding: 3px 20px;
     color: rgb(18, 234, 234);
 }
@@ -78,7 +79,7 @@ body
     font-size: 22px;
 }
 .nav .button{
-    margin-left: 435px;
+    margin-left: 415px;
 }
 .container{
     /* background-color: #131720; */
@@ -161,4 +162,92 @@ div {
 }
 .container2 .box .inimg img:hover{
     box-shadow: -1px 1px 6px 2px rgba(0,0,0,0.75);
+}
+.T img
+{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 50px;
+    position: absolute;
+    animation-name: T;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.T h1
+{
+    color:rgb(247, 5, 5);
+    font-size: 50px;
+    margin-left: 10px;
+}
+.T .h1
+{
+    animation-name: H;
+    animation-timing-function:linear;
+    /* animation-fill-mode: forwards; */
+    animation-duration: .4s;
+    animation-delay: 1s;
+}
+.T .h2
+{
+    animation-name: H;
+    animation-timing-function: linear;
+    /* animation-fill-mode: forwards; */
+    animation-duration: .5s;
+    animation-delay: 1.3s;
+    color: white;
+}
+.T .h3
+{
+    animation-name: H;
+    animation-timing-function: ease-out;
+    /* animation-fill-mode: forwards; */
+    animation-duration: .5s;
+    animation-delay: 1.6s;
+    color: green;
+}
+.T .h4
+{
+    animation-name: H;
+    animation-timing-function: ease-out;
+    /* animation-fill-mode: forwards; */
+    animation-duration: .5s;
+    animation-delay: 1.9s;
+    color: orange;
+}
+.T
+{
+    justify-content: center;
+    align-items: center;
+    background-color: #16001f;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+@keyframes T
+{
+    from
+    {
+        left:-130px;
+    }
+    to
+    {
+        left:440px;
+    }
+}
+@keyframes H
+{
+    
+    0%
+    {
+        margin-bottom: 30px;
+    }
+    50%
+    {
+        margin-bottom: 100px;
+    }
+    100%
+    {
+        margin-bottom: 30px;
+    }
 }

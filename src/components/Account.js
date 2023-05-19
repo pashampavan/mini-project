@@ -16,13 +16,12 @@ export default function Account() {
       const r = await getUser(user.rollNo,user.password);
       user = JSON.parse(localStorage.getItem('user'));
       setSavings(user.savings);
+      const serve=document.getElementById('serve');
+      const s=document.getElementById('s');
+      const arrow=document.getElementById('a');
       if(user.name==='canteen' || user.name==='stationary' || user.name==='juicePoint')
       {
-        const serve=document.getElementById('serve');
-        const arrow=document.getElementById('arrow');
-        const s=document.getElementById('s');
         serve.style.display="none";
-        s.style.display="none";
         arrow.style.display="none";
       }
     }
@@ -77,34 +76,11 @@ export default function Account() {
           <h4>RollNo:  {user.rollNo}</h4>
           <h4>Dob:  {user.date}</h4>
           <h4>Savings:  <strong style={{"color":"green"}}>{savings}/-</strong></h4>
-          {/* <div className="a">
-          </div> */}
             <Link to="/canteen" style={{display:'block'}}>Orders</Link>
             <a onClick={show} style={{display:'block'}} href='#history' className="a2" >Transaction history</a>
-          {/* <button onClick={show} className="btn2" >Transaction history</button> */}
-          {/* <button className="btn2">Services</button> */}
-          <div className="s" id="s">
-            <section className="service" id="services">
-              <form >
-                <button onClick={transfer} >  Money transfer</button>
-              </form>
-              <form>
-                <button onClick={cant} >Canteen</button>
-              </form>
-              <form >
-                <button onClick={stationary} >Stationary</button>
-              </form>
-              <form >
-                <button onClick={juicePoint} >Juice point</button>
-              </form>
-            </section>
-          </div>
         </div>
       </section>
-      
-        <div className='arrow' id='arrow'> <i class="fa fa-angle-double-down" style={{"color":"white"}}></i></div>
-      
-      
+      <div className='arrow' id='arrow'> <i class="fa fa-angle-double-down" id="a" style={{"color":"white"}}></i></div>
       <section class="serve" id='serve'>
         <div class="card card1">
           <img src="https://cdn.pixabay.com/photo/2018/08/06/20/49/money-transfer-3588301__340.jpg" alt=""/>
@@ -139,7 +115,8 @@ export default function Account() {
               </form>
         </div>
       </section>
-      <section className="history" key={user.name} id="history">
+      <section className="history" key={user.name} id="history" style={{minHeight:"100vh"}}>
+     <h1 style={{color:'white',textAlign:'center'}}>Transaction history</h1>
         <div className="type">
           <h3>Transaction</h3>
           <h3>Name</h3>

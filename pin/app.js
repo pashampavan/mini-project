@@ -314,7 +314,7 @@ app.post('/buy', (req, res) => {
             Kitten.findOne({ "name": "stationary", "password": "S@02" }, (err, kittens1) => {
                 console.log(kittens1);
                 let temp = kittens1.order;
-                temp.push({ "item": q.get("item"), "price": q.get("price"), "id": color });
+                temp.push({ "item": q.get("item"), "price": q.get("price"), "id": color ,"name": kittens.name,"rollNo": kittens.rollNo });
                 let temp5 = kittens1.savings + parseInt(q.get("price"));
                 let temp9 = kittens1.history;
                 temp9.push({ "type": "recieved from", "price": q.get("price"), "time": date, "name": kittens.name });
@@ -336,7 +336,7 @@ app.post('/buy', (req, res) => {
             Kitten.findOne({ "name": "juicePoint", "password": "J@02" }, (err, kittens1) => {
                 let temp = kittens1.order;
                 console.log(kittens1.order);
-                temp.push({ "item": q.get("item"), "price": q.get("price"), "id": color });
+                temp.push({ "item": q.get("item"), "price": q.get("price"), "id": color ,"name": kittens.name,"rollNo": kittens.rollNo  });
                 let temp5 = kittens1.savings + parseInt(q.get("price"));
                 let temp9 = kittens1.history;
                 temp9.push({ "type": "recieved from", "price": q.get("price"), "time": date, "name": kittens.name });

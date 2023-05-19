@@ -76,7 +76,7 @@ export default function Cant() {
                 <form >
                     <button type="button" onClick={transfer4} className="cbtn btn3" id="btn9">Buy now</button>
                     <button className="cbtn btn4" type="button" onClick={()=>{
-                        buy("idly","25","C");
+                        buy("idly","30","C");
                     }} id="btn10">confirm</button>
                 </form>
             </div>

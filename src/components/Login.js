@@ -34,16 +34,12 @@ export default function Login() {
       showAlert("Incorrect login credentials.", "red");
     }
   }
-
-
   const onChange = (e) => {
     setCred({ ...cred, [e.target.name]: e.target.value })
   }
-
-
   return (
 <>
-    <section className="signupcontainer">
+    <section className="signupcontainer" id="login">
       <h1 >login</h1>
       <form onSubmit={onSubmit} >
         <div >
