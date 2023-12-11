@@ -47,8 +47,6 @@ export default function Signup() {
   }
   
   const sendOtp=async (e)=>{
-
-
     const btn=document.getElementById('btn');
     btn.style.boxShadow="0 0 7px 6px aqua";
     btn.style.backgroundColor="aqua";

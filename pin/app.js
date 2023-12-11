@@ -73,7 +73,7 @@ app.get('/log', (req, res) => {
 })
 app.get('/', (req, res) => {
     console.log("i am pavan")
-    res.status(200).render('entry.pug');
+    res.status(200).json({"pa":"pavam"});
 })
 app.get('/login', (req, res) => {
     console.log("i am pavan")

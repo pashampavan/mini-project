@@ -16,8 +16,6 @@ export default function Cant() {
             setLogin(true);
         }
     },[])
-
-
   return (
     <>
     <section className="items" style={{"marginTop":"20px"}}>

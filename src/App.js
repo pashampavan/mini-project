@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter basename='/mini-project'>
     <Navbar/>
     <Switch>
-          <Route exact path="/mini-project">
+          <Route exact path="/">
             <Login/>
           </Route>
           <Route exact path="/signup">
@@ -47,7 +47,6 @@ function App() {
           </Route>
         </Switch>
     </BrowserRouter>
-
     </Context>
     </>
   );
