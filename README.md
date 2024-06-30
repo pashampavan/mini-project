@@ -4,7 +4,7 @@
 The objective of this project is to solve the following problems in our college, we have a significant number of first-year and second-year students who are minors and therefore ineligible to use UPI and online transactions. During lunchtime and morning breaks, we often witness a rush at the canteen, stationery shop, and juice point, where we purchase tokens and collect our items. The limited duration of our lunch break, which is only 40 minutes, often leads to delays in receiving our food. As a result, many students are facing difficulties in managing this situation.
 </p>
 
-![demo](https://i.ibb.co/3F61S7R/i-notebook-demo1.png)
+![demo](https://i.ibb.co/BBDJ9Ck/mini-project-demo.png)
 
 ## Tech Stack 
 
