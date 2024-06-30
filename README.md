@@ -1,74 +1,52 @@
-#Project execution video link
-https://clipchamp.com/watch/Ck7awHtUKSg
+# PIN BANK OF VASAVI
 
+<p align="center">
+The objective of this project is to solve the following problems in our college, we have a significant number of first-year and second-year students who are minors and therefore ineligible to use UPI and online transactions. During lunchtime and morning breaks, we often witness a rush at the canteen, stationery shop, and juice point, where we purchase tokens and collect our items. The limited duration of our lunch break, which is only 40 minutes, often leads to delays in receiving our food. As a result, many students are facing difficulties in managing this situation.
+</p>
 
-# Getting Started with Create React App
+![demo](https://i.ibb.co/3F61S7R/i-notebook-demo1.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tech Stack 
 
-## Available Scripts
+-   [React.js](https://react.dev/)
+-   [Node.js](https://nodejs.org/)
+-   [MongoDB](https://www.mongodb.com/)
 
-In the project directory, you can run:
+## Table of Contents
+- [Installation & setup](#installation)
+- [Usage](##Usage)
+- [Demo](#Demo)
+  
+## instalation & Setup
+Clone the repository,
+```bash
+git clone https://github.com/pashampavan/mini-projec.git
+```
+Next, install the dependencies:
+```bash
+npm install
+```
+Then, run the front-end development server:
+```bash
+npm run start
+```
+Then, navigate to backend folder:
+```bash
+cd pin
+```
+Next, install the dependencies:
+```bash
+npm install
+```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Then, run the backend development server:
+```bash
+node index.js
+```
+## Usage
+1. Signup
+2. Login
+3. Send money to others and order food, stationery items ...ext
+   
+## Demo
+Open [http://localhost:3000](http://localhost:3000) with your browser.
